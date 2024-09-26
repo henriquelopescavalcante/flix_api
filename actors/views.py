@@ -15,5 +15,3 @@ class ActorRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (IsAuthenticated, GlobalDefaultPermission,)
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
-
-

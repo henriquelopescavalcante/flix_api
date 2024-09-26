@@ -26,3 +26,10 @@ class MovieModelSerializer(serializers.ModelSerializer):
     def validate_resume(self, value):
         if len(value) > 500:
             raise serializers.ValidationError('Resumo não deve ter mais que 200 caracteres.')
+
+
+class MovieListDetailSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Movie
+        fields = '__all__'
