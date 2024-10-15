@@ -2,6 +2,7 @@ from django.db import models
 from actors.models import Actor
 from genres.models import Genre
 
+
 class Movie(models.Model):
     title = models.CharField(max_length=500)
     genre = models.ForeignKey(
@@ -14,5 +15,5 @@ class Movie(models.Model):
     resume = models.TextField(null=True, blank=True)
 
 
-    def __str__(self):
-        return self.title
+def __str__(self):
+    return self.title
