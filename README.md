@@ -94,8 +94,6 @@ python manage.py test
 
  Deploy com Docker
 
- Integração com front-end (ex: React/Next.js)
-
  Melhorias em segurança e logging
 
 👨‍💻 Autor
